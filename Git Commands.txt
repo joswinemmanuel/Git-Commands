@@ -96,3 +96,21 @@ git merge side2
 git merge side3
 
 git push
+
+
+
+How to upload files from Git bash
+---------------------------------
+git init
+
+git remote add origin <git_repo_link>
+
+git remote -v (to check if we've access for push and pull)
+
+git add .  (all files are staged to be commited)
+
+git commit -m "new commit"
+
+git push origin master
+
+git help
