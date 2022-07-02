@@ -1,0 +1,98 @@
+	Git commands
+
+git commit
+
+git branch newImage
+
+git checkout newImage; git commit
+
+git checkout -b bugFix
+
+git merge bugFix
+
+git rebase main
+
+git checkout c1; git checkout main; git commit
+
+git checkout c4
+
+^    or    ~<num>
+
+git checkout main^
+
+git checkout C3; git checkout HEAD^; git checkout HEAD^; git checkout HEAD^
+
+git checkout HEAD~2
+
+git branch -f main HEAD~3
+
+git reset HEAD~1
+
+git revert HEAD
+
+git cherry-pick c2 c4
+
+git rebase -i HEAD~4
+
+git commit --amend
+
+git tag v1 C1
+
+git describe <ref>
+<tag>_<numCommits>_g<hash>
+Where tag is the closest ancestor tag in history, numCommits 
+is how many commits away that tag is, and <hash> is the 
+hash of the commit being described.
+
+
+git rebase main bugFix
+
+git rebase bugFix side
+
+git rebase side another
+
+git rebase another main
+
+
+git checkout main^2
+
+git checkout HEAD~^2~2
+
+git branch bugWork main^^2^
+
+
+
+git clone
+
+git checkout o/main; git commit
+
+git fetch
+
+git fetch; git merge o/main  == git pull
+
+git fakeTeamwork
+
+git fakeTeamwork foo 3
+
+git push
+
+git fetch; git rebase o/main; git push  (1 same)
+
+git fetch; git merge o/main; git push  (2 same)
+
+git pull --rebase; git push                   (1 same)
+
+git pull; git push                  		   (2 same)
+
+
+git checkout main
+
+git pull
+
+git merge side1
+
+git merge side2
+
+git merge side3
+
+git push
